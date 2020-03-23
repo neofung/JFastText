@@ -93,6 +93,15 @@ public class JFastText {
         return wordVec;
     }
 
+    public List<Float> getSentenceVector(String word) {
+        FastTextWrapper.RealVector rv = fta.getSentenceVector(word);
+        List<Float> wordVec = new ArrayList<>();
+        for (int i = 0; i < rv.size(); i++) {
+            wordVec.add(rv.get(i));
+        }
+        return wordVec;
+    }
+
     public int getNWords() {
         return fta.getNWords();
     }

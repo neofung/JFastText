@@ -201,6 +201,8 @@ public class FastTextWrapper extends com.github.jfasttext.config.FastTextWrapper
         public native @ByVal FloatStringPairVector predictProba(@StdString String arg0, int arg1);
         public native @ByVal RealVector getVector(@StdString BytePointer arg0);
         public native @ByVal RealVector getVector(@StdString String arg0);
+        public native @ByVal RealVector getSentenceVector(@StdString BytePointer arg0);
+        public native @ByVal RealVector getSentenceVector(@StdString String arg0);
         public native @ByVal StringVector getWords();
         public native @ByVal StringVector getLabels();
         public native @StdString BytePointer getWord(int arg0);
@@ -235,12 +237,15 @@ public class FastTextWrapper extends com.github.jfasttext.config.FastTextWrapper
 // Added <numeric> since VS 14.0 complains about missing std::iota
 // #include <numeric>
 // #include "fastText/src/args.cc"
+// #include "fastText/src/densematrix.cc"
 // #include "fastText/src/dictionary.cc"
 // #include "fastText/src/fasttext.cc"
+// #include "fastText/src/loss.cc"
 // #include "fastText/src/matrix.cc"
+// #include "fastText/src/meter.cc"
 // #include "fastText/src/model.cc"
 // #include "fastText/src/productquantizer.cc"
-// #include "fastText/src/qmatrix.cc"
+// #include "fastText/src/quantmatrix.cc"
 // #include "fastText/src/vector.cc"
 // #include "fastText/src/utils.cc"
 

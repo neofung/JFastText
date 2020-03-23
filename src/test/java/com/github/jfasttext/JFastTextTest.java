@@ -120,4 +120,14 @@ public class JFastTextTest {
         System.out.println("Unloading model ...");
         jft.unloadModel();
     }
+
+    @Test
+    public void test10GetVector() throws Exception {
+        JFastText jft = new JFastText();
+        jft.loadModel("src/test/resources/models/supervised.model.bin");
+        String word = "Do you like soccer ?";
+        List<Float> vec = jft.getVector(word);
+        System.out.printf("\nSentence embedding vector of '%s': %s\n", word, vec);
+    }
+
 }
