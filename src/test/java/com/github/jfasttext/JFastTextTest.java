@@ -126,7 +126,7 @@ public class JFastTextTest {
         JFastText jft = new JFastText();
         jft.loadModel("src/test/resources/models/supervised.model.bin");
         String word = "Do you like soccer ?";
-        List<Float> vec = jft.getVector(word);
+        List<Float> vec = jft.getSentenceVector(word);
         System.out.printf("\nSentence embedding vector of '%s': %s\n", word, vec);
     }
 

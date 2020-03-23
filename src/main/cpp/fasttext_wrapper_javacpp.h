@@ -1,6 +1,7 @@
 // Added <numeric> since VS 14.0 complains about missing std::iota
 #include <numeric>
 #include "fastText/src/args.cc"
+#include "fastText/src/autotune.cc"
 #include "fastText/src/densematrix.cc"
 #include "fastText/src/dictionary.cc"
 #include "fastText/src/fasttext.cc"
