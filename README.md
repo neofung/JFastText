@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/vinhkhuc/JFastText.svg?branch=master)](https://travis-ci.org/vinhkhuc/JFastText)
+[![Build Status](https://travis-ci.org/github/neofung/JFastText.svg?branch=dev/update_version)](https://travis-ci.org/github/neofung/JFastText)
 
 Table of Contents
 =================

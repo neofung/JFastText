@@ -3,7 +3,6 @@ jdk:
   - oraclejdk8
 os:
   - linux
-  - osx
 dist: trusty
 cache: bundler
 # Setting install to 'true' to prevent Travis CI from installing depedencies via:
