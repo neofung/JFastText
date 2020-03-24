@@ -4,6 +4,7 @@ jdk:
 os:
   - linux
   - osx
+dist: trusty
 cache: bundler
 # Setting install to 'true' to prevent Travis CI from installing depedencies via:
 # "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V" which fails due to missing the GPG secret key.

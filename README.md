@@ -28,9 +28,9 @@ JFastText is ideal for building fast text classifiers in Java.
 ## Maven Dependency
 ```xml
 <dependency>
-  <groupId>com.github.vinhkhuc</groupId>
+  <groupId>org.neofung</groupId>
   <artifactId>jfasttext</artifactId>
-  <version>0.4</version>
+  <version>0.9.2-SNAPSHOT</version>
 </dependency>
 ```
 The Jar package on Maven Central is bundled with precompiled fastText library for Windows, Linux and
@@ -40,9 +40,14 @@ MacOSX 64bit.
 C++ compiler (g++ on Mac/Linux or cl.exe on Windows) is required to compile fastText's code.
 
 ```bash
-git clone --recursive https://github.com/vinhkhuc/JFastText
+git clone --recursive https://github.com/neofung/JFastText
 cd JFastText
 mvn package
+```
+
+P.S. If you are trying to build on Windows, please run below command before ```mvn package```
+```bash
+"c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64
 ```
 
 ## Quick Application - Language Identification
